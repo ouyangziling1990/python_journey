@@ -1,5 +1,10 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+'''
+author ziling
+simple code for HTTP Get method using python requests
+'''
 import requests
-
 def getHtmlText(url):
     try:
         r = requests.get(url, timeout=30)
