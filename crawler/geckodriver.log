@@ -1,0 +1,39 @@
+1528563202754	geckodriver	INFO	geckodriver 0.20.1
+1528563202757	geckodriver	INFO	Listening on 127.0.0.1:48647
+1528563203768	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.Qb8du7cbxZBG"
+1528563205595	Marionette	INFO	Listening on port 45495
+1528563205679	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1528563271591	geckodriver	INFO	geckodriver 0.20.1
+1528563271594	geckodriver	INFO	Listening on 127.0.0.1:44759
+1528563272602	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.Y6ORYAuGaxI9"
+1528563274055	Marionette	INFO	Listening on port 39563
+1528563274116	Marionette	WARN	TLS certificate errors will be ignored for this session
+1528563293987	addons.productaddons	WARN	Failed downloading XML, status: 0, reason: error
+1528563295270	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1528563471668	geckodriver	INFO	geckodriver 0.20.1
+1528563471671	geckodriver	INFO	Listening on 127.0.0.1:40903
+1528563472673	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.dzNcKEPZNe0D"
+1528563474136	Marionette	INFO	Listening on port 34905
+1528563474191	Marionette	WARN	TLS certificate errors will be ignored for this session
+1528563499612	addons.productaddons	WARN	Failed downloading XML, status: 0, reason: error
+1528563500624	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1528563578522	geckodriver	INFO	geckodriver 0.20.1
+1528563578525	geckodriver	INFO	Listening on 127.0.0.1:42627
+1528563579536	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.oMpNZM8KAhWQ"
+1528563580945	Marionette	INFO	Listening on port 37341
+1528563581044	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1528563823732	geckodriver	INFO	geckodriver 0.20.1
+1528563823735	geckodriver	INFO	Listening on 127.0.0.1:39337
+1528563824744	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.utETerxvAcdL"
+1528563826166	Marionette	INFO	Listening on port 36547
+1528563826252	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1528563977498	geckodriver	INFO	geckodriver 0.20.1
+1528563977502	geckodriver	INFO	Listening on 127.0.0.1:58165
+1528563978508	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.wgPa2gT5MhT7"
+1528563979955	Marionette	INFO	Listening on port 39635
+1528563980025	Marionette	WARN	TLS certificate errors will be ignored for this session
+1528564100739	addons.productaddons	WARN	Failed downloading XML, status: 0, reason: error
+1528564102007	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
