@@ -10,10 +10,6 @@ cursor.close()
 conn.close()
 print(value)
 
-
-
-
-
 def quadratic(a, b, c):
     if 2*b-4*a*c<0:
         return 
