@@ -4,3 +4,4 @@
 2. crawler: to get info from network, it contains requests/beautifulSoup/multithread/basekowledge of crawler/
 3. framework: see django,
 4. analysis: Data model and visualization.
+5. test
