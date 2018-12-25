@@ -5,9 +5,10 @@ import pymysql
 import time
 from setting_db import DATABASES
 from setting_db import persistence_time_path
-from setting_db import INIT_TIME 
+from setting_db import INIT_TIME
 import os
 import json
+
 
 def connectDB(DB_type):
     if not DB_type:
@@ -18,8 +19,8 @@ def connectDB(DB_type):
     cur = ""
     try:
         con = pymysql.connect(host=DB['HOST'], user=DB['USER'],
-                          passwd=DB['PASSWORD'],
-                          db=DB['NAME'], port=DB['PORT'], charset="utf8")
+                              passwd=DB['PASSWORD'],
+                              db=DB['NAME'], port=DB['PORT'], charset="utf8")
         cur = con.cursor()
     except Exception as e:
         print(e)
@@ -29,7 +30,7 @@ def connectDB(DB_type):
     finally:
         pass
 
-    if state == False:
+    if state is False:
         print("database connection failed, sleep 5 seconds and try again then")
         time.sleep(5)
         connectDB(DB)
@@ -56,8 +57,9 @@ def get_start_time(type_str):
         time_str = f.read()
         obj = json.loads(time_str)
         if type_str in obj:
-            return_str = obj[type_str] 
+            return_str = obj[type_str]
     return return_str
+
 
 def set_start_time(type_str, time_str):
     if not type_str:
@@ -75,15 +77,18 @@ def set_start_time(type_str, time_str):
             time_save[type_str] = time_str
             f.write(json.dumps(time_save))
 
+
 def main():
     corsfaceConn, corsfaceCur = connectDB(DATABASES['CorsfaceDB'])
 
-    sql="select created_time from `facetrack_info` order by created_time desc limit 0, 1"
+    sql = "select created_time from `facetrack_info`"
+    + "order by created_time desc limit 0, 1"
     corsfaceCur.execute(sql)
     corsfaceConn.commit()
     results = corsfaceCur.fetchall()
     print(results)
     corsfaceConn.close()
 
-if __name__=='__main__':
+
+if __name__ == '__main__':
     main()

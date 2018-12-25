@@ -7,6 +7,8 @@ author ziling
 '''
 import os
 import json
+
+
 def io_base():
     '''
 for computer, keyboard is the base input.
@@ -16,17 +18,18 @@ screen is the base out put
     name = input("input your name: ")
     print(name)
 
+
 def file_io(path):
     if not path:
         return
-#check file is exist or not
+# check file is exist or not
     if os.path.exists(path):
         print(path, "is exist")
-#write file
+# write file
     f = open(path, "w")
     f.write("ziling\ntest")
     f.close()
-#read file
+# read file
     f = open(path, "r")
     str = f.read()
     print(str)
@@ -37,6 +40,7 @@ def file_io(path):
     for line in f:
         print(line)
     f.close()
+
 
 def json_operate():
     '''
@@ -55,9 +59,10 @@ load(file)
 
     print(json.loads(str1))
 
+
 def main():
     # io_base()
-    #file_io("file.io")
+    # file_io("file.io")
     json_operate()
 
 
